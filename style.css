@@ -10,25 +10,43 @@ body{
     background-color: #FEFEFE;
 }
 
-header{
+/* MENU */
+.menus{
     background-color: #000000;
     display: flex;
+    flex-direction: center;
     justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    color: #FEFEFE;
-
-}    
-
-.logo{
-    width: 10px;
+    align-items: center;
+    padding: 10px;
+    height: 88px;
 }
+
 .menu__items{
-    display: flex;
-  
+    display: flex;   
+    list-style: none;
 }
 
 .menu__items li{
+    margin: 0 15px;
+}
 
+.menu__items a{
     color: #FEFEFE;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu__items a:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    background-color: #FEFEFE;
+    border-radius: 50px;
+    
+}
+
+.menu__logo{
+    width: 150px;
+    height: 60px;
 }
