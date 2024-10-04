@@ -65,5 +65,11 @@ nav{
     text-decoration: underline;
 }
 
-
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    width: 900px;
+}
 
