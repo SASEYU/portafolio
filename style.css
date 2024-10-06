@@ -133,4 +133,11 @@ main{
     list-style: none;
 }
 
+.icon-container{
+    background-color: #FEFEFE;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 270px;
+}
 
