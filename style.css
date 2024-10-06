@@ -136,7 +136,8 @@ main{
 .icon-container{
     background-color: #FEFEFE;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     width: auto;
     height: 270px;
 }
