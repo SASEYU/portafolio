@@ -137,8 +137,25 @@ main{
     background-color: #FEFEFE;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     width: auto;
+    border-radius: 20px;
     height: 270px;
+    margin: 20px 0;
+
+}
+
+.icon-container img{
+    width: 130px;
+
+}
+
+#html{
+    width: 145px;
+}
+
+#ia{
+    width: 165px;
 }
 
