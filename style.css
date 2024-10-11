@@ -218,7 +218,7 @@ main{
 
 footer{
 width: 90%;
-height: 788px;
+height: 890px;
 background-color: #9F01FA;
 margin: 0 auto;
 
@@ -227,8 +227,25 @@ margin: 0 auto;
 
 .element{
     display: flex;
+    flex-direction: column;
 
 }
+
+#contacto{
+    color: #000000;
+    
+}
+
+.info{
+    height: 102pox;
+    background-color: black;
+    color: #FEFEFE;
+    text-align: center;
+    
+}
+
+
+
 
 
 
