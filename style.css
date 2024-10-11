@@ -23,12 +23,13 @@ body{
 
 nav{
     background-color: #000000;
-    width: 100%;
+    width: 90%;
     height: 58px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    margin: 0 auto;
 
 }
 /*LOGO*/
@@ -207,13 +208,27 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0 80px;
     width: auto;
     height: 300px;
     border: #9F01FA solid 5px;
 
 }
 
+
+footer{
+width: 90%;
+height: 788px;
+background-color: #9F01FA;
+margin: 0 auto;
+
+
+}
+
+.element{
+    display: flex;
+
+}
 
 
 
