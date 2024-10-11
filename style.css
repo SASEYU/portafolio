@@ -168,5 +168,38 @@ main{
     justify-content: space-around;
     background-color: #FEFEFE;
     width: auto;
+    height: 650px;
     border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    
 }
+.alura, .skill{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.formations-img{
+    width: 150px;
+
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+h3 li{
+    margin: -50px;
+    padding-bottom: 10px;
+
+}
+
+
+
+
