@@ -112,7 +112,8 @@ nav{
 /*MAIN*/
 
 main{
-    background-color: #D3DBE1;
+    background-color: #000000;
+    color: #FEFEFE;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +125,9 @@ main{
 
 .title{
     text-align: center;
+    text-decoration: underline;
     padding: 50px 0 10px;
+    color: #9F01FA;
 
 }
 
@@ -139,6 +142,7 @@ main{
 
 .icon-container{
     background-color: #FEFEFE;
+    border: #9F01FA solid 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -167,8 +171,9 @@ main{
     display: flex;
     justify-content: space-around;
     background-color: #FEFEFE;
+    border: #9F01FA solid 5px;
     width: auto;
-    height: 650px;
+    height: 450px;
     border-radius: 20px;
     padding: 20px;
     margin: 20px 0;
@@ -177,28 +182,38 @@ main{
 .alura, .skill{
     display: flex;
     align-items: center;
+    color: #000000;
     padding: 0px;
+   
 
 }
 
-.formations-img{
-    width: 150px;
-
+.skill{
+    gap: 50px;
     
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    
 
 }
 
-h3 li{
-    margin: -50px;
-    padding-bottom: 10px;
+.experiency{
+    background-color: #FEFEFE;
+    color: #000000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    width: auto;
+    height: 300px;
+    border: #9F01FA solid 5px;
 
 }
+
 
 
 
