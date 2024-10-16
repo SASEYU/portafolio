@@ -13,7 +13,7 @@
     <header class="container">
         <nav class="menus">
             <div class="logo">
-                <img class="menu__logo" src="./img/logo_transp.png" alt="SASEYU" width="200">
+                <img class="img__logo" src="./img/icons/logo_svg.svg" alt="SASEYU" >
             </div>
 
             <ul class="menu__items">
@@ -241,24 +241,38 @@
             </article>
         </section>
     </main>
+    
+<!-- Footer-->
     <footer class="element">
         <h2 class="title" id="contacto">Contacto</h2>
 
         <div>
-            <a href=""></a>
+            <img src="./img/icons/inbox_letter_contact_envelope_mail_email_icon_220346.svg" alt="email" width="200px">
         </div>
-        <p>¿Quieres contactarme?</p>
-        <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
+        <div class="contenido">
+            <p class="consult">¿Quieres contactarme?</p>
+            <p class="consult">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
+    
+        <form action="mailto: samuelsegur@gmail.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto">
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" rows="5"></textarea>
+        <button type="submit">Enviar</button>
+        <a href="#" download="#">
+            <button>Portafolio PDF</button>
+        </a>
+
+        </form>
+        </div>
         <div class="info">
-            <p>Desarrollado por Samuel Segura 2024</p>
+            <p>&copy; Desarrollado por Samuel Segura 2024</p>
         </div>
     </footer>
-
-
-
-
-    <!--<a href="https://github.com/tu-usuario" target="_blank">     
-  <i class="fab fa-github"></i> GitHub  </a> -->
 
 </body>
 

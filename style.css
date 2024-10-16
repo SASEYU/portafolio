@@ -36,15 +36,22 @@ nav{
 .logo{
     display: flex;
     align-items: center;
-
-
+    justify-content: center;
 }
-.logo img{
+
+.img__logo{
     background-color: #FEFEFE;
-    border-radius: 8px;
-    width: 120px;
-    height: 40px;
+    border-radius: 100px;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    margin: 30px;
+    object-fit: contain;
+
+
 }
+
+
 
 /*MENU*/
 
@@ -129,7 +136,6 @@ main{
     text-decoration: underline;
     padding: 50px 0 10px;
     color: #9F01FA;
-
 }
 
 .content{
@@ -215,19 +221,37 @@ main{
 
 }
 
+/*Footer*/
 
 footer{
 width: 90%;
 height: 890px;
 background-color: #9F01FA;
 margin: 0 auto;
+display: flex;
+flex-direction: colum;
+justify-content: space-around;
+flex-wrap: wrap;
 
 
 }
 
+footer img{
+    width: 464px;
+    height: 593px;
+    background-color: #FEFEFE;
+    border-radius: 16px;
+}
+
+.contenido{
+    width: 656px;
+    height: 596px;
+}
 .element{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
 
 }
 
@@ -243,6 +267,9 @@ margin: 0 auto;
     text-align: center;
     
 }
+
+
+
 
 
 
