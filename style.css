@@ -225,18 +225,15 @@ main{
 
 footer{
 width: 90%;
-/*height: 890px;*/
 background-color: #9F01FA;
 margin: 0 auto;
-/*display: flex;
-flex-direction: colum;*/
 padding: 20px;
 box-sizing: border-box;
 
 
 }
 
-footer .footer-content{
+/*footer */.footer-content{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -283,12 +280,14 @@ form input, form textarea{
 }
 
 form button{
-    padding: 10px;
+    padding: 10px 20px;
+    margin: 10px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius:px ;
     cursor: pointer;
+    align-self: center;
 }
 
 form button:hover{
@@ -302,11 +301,18 @@ form button:hover{
 }
 
 .info{
-    height: 102pox;
-
+    width: 100%;
+    padding: 10px;
     background-color: black;
     color: #FEFEFE;
     text-align: center;
+    box-sizing: border-box;
+    align-self: flex-end;
+    /*margin-top: 20px;*/
+    bottom: 0;
+    left: 0;
+    
+    
     
 }
 
