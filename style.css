@@ -34,6 +34,18 @@ nav {
 }
 
 /*LOGO*/
+.logo-container {
+    width: 200px;
+    height: 100px;
+    background-color: #FEFEFE;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-20deg) scale(0.9);
+    border-radius: 15px;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -41,12 +53,9 @@ nav {
 }
 
 .img__logo {
-    background-color: #FEFEFE;
-    border-radius: 40%;
-    width: 200px;
+    width: 90%;
     height: auto;
     padding: 5px;
-    margin: 30px;
     object-fit: contain;
 
 
@@ -97,8 +106,8 @@ nav {
 
 .foto {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 280px;
     object-fit: copver;
     margin-left: 20px;
 
@@ -230,6 +239,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 .hobbie-link {
     margin-top: 10px;
     text-align: center;
@@ -238,7 +248,7 @@ main {
     text-decoration: none;
 }
 
-.hobbie-link:hover{
+.hobbie-link:hover {
     text-decoration: underline;
 
 }
@@ -271,12 +281,12 @@ main {
 
 }
 
-a img{
+a img {
     transition: transform 0.3s ease;
 
 }
 
-a img:hover{
+a img:hover {
     transform: scale(1.1);
 }
 
@@ -286,19 +296,41 @@ a img:hover{
 
 }
 
-.experiency {
+.exper-contentent {
     background-color: #FEFEFE;
     color: #000000;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 20px;
     margin: 20px 0 80px;
     width: auto;
-    height: 300px;
+    height: 500px;
     border: #9F01FA solid 3px;
 
+}
+
+.proy-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pract-content{
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.prac-html, .prac-js{
+    width: 100px;
 }
 
 /*Footer*/
@@ -313,7 +345,7 @@ footer {
 
 }
 
-/*footer */
+
 .footer-content {
     display: flex;
     justify-content: center;
