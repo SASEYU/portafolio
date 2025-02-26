@@ -284,6 +284,7 @@ a img:hover {
 
 .projects-section, .practices-section{
     width: 48%;
+    text-align: center;
 }
 
 .proy-content{
