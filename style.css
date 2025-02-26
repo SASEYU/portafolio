@@ -59,7 +59,10 @@ nav {
 .menu__items {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .menu__items li a {
@@ -322,6 +325,12 @@ a img:hover {
     height: auto;
 }
 
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 /*FOOTERr*/
 footer {
