@@ -11,14 +11,12 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     height: 100vh;
-
 }
 
 /* HEADER */
 .container {
     display: flex;
     flex-direction: column;
-
 }
 
 nav {
@@ -30,7 +28,6 @@ nav {
     align-items: center;
     padding: 0 20px;
     margin: 0 auto;
-
 }
 
 /*LOGO*/
@@ -38,7 +35,6 @@ nav {
     width: 200px;
     height: 100px;
     background-color: #FEFEFE;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,14 +53,9 @@ nav {
     height: auto;
     padding: 5px;
     object-fit: contain;
-
-
 }
 
-
-
 /*MENU*/
-
 .menu__items {
     list-style: none;
     display: flex;
@@ -76,7 +67,6 @@ nav {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-
 }
 
 .menu__items li a:hover {
@@ -107,10 +97,9 @@ nav {
 .foto {
     border-radius: 50%;
     width: 270px;
-    height: 280px;
+    height: 295px;
     object-fit: copver;
     margin-left: 20px;
-
 }
 
 .icons {
@@ -122,7 +111,6 @@ nav {
 
 .icons img {
     margin-right: -15px;
-
 }
 
 .icons a {
@@ -136,7 +124,6 @@ nav {
 }
 
 /*MAIN*/
-
 main {
     background-color: #000000;
     color: #FEFEFE;
@@ -146,7 +133,6 @@ main {
     align-items: center;
     margin: 0 auto;
     width: 90%;
-
 }
 
 .title {
@@ -159,7 +145,6 @@ main {
 
 .content {
     padding: 0 50px;
-
 }
 
 .list {
@@ -176,7 +161,6 @@ main {
     border-radius: 20px;
     height: 270px;
     margin: 20px 0;
-
 }
 
 .icon-item {
@@ -188,7 +172,6 @@ main {
 .icon-container img {
     width: 135px;
     height: auto;
-
 }
 
 #html {
@@ -250,7 +233,6 @@ main {
 
 .hobbie-link:hover {
     text-decoration: underline;
-
 }
 
 .formations {
@@ -263,7 +245,6 @@ main {
     border-radius: 20px;
     padding: 20px;
     margin: 20px 0;
-
 }
 
 .alura,
@@ -272,18 +253,14 @@ main {
     align-items: center;
     color: #000000;
     padding: 0px;
-
-
 }
 
 .skill {
     gap: 50px;
-
 }
 
 a img {
     transition: transform 0.3s ease;
-
 }
 
 a img:hover {
@@ -293,58 +270,67 @@ a img:hover {
 .content {
     display: flex;
     flex-direction: column;
-
 }
 
-.exper-contentent {
+.exper-content {
     background-color: #FEFEFE;
     color: #000000;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     margin: 20px 0 80px;
-    width: auto;
-    height: 500px;
     border: #9F01FA solid 3px;
+}
 
+.projects-section, .practices-section{
+    width: 48%;
 }
 
 .proy-content{
-    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    gap: 15px;
 }
 
-.pract-content{
-    padding: 20px;
-    width: 50%;
+.project-item{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.project-item img{
+    width: 300px;
+    height: auto;
+}
+
+.practices-section{
+    margin-top:140px;
+
+}
+.pract-content{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
     flex-wrap: wrap;
-    
 }
-.prac-html, .prac-js{
+
+.pract-content img{
     width: 100px;
+    height: auto;
 }
 
-/*Footer*/
 
+/*FOOTERr*/
 footer {
     width: 90%;
     background-color: #9F01FA;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-
-
 }
-
 
 .footer-content {
     display: flex;
@@ -358,11 +344,9 @@ footer img {
     border-radius: 16px;
     margin: 50PX;
     border: solid 3PX #000000;
-
 }
 
 .contenido {
-
     flex: 1;
     max-width: 600px;
     height: 650px;
@@ -377,7 +361,6 @@ footer img {
 form {
     display: flex;
     flex-direction: column;
-
 }
 
 form label {
@@ -409,14 +392,12 @@ form button {
 form button:hover {
     background-color: #9F01FA;
     border: solid 1px #000000;
-
 }
 
 #contacto {
     color: #000000;
     padding: 30px;
     font-size: 32px;
-
 }
 
 .download-btn {
@@ -428,7 +409,6 @@ form button:hover {
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
-
 }
 
 .download-btn:hover {
@@ -448,5 +428,4 @@ form button:hover {
     align-items: center;
     bottom: 0;
     left: 0;
-
 }
