@@ -6,8 +6,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-bg: #fefefe;
+    --color-primary:#9f01fa; 
+    --color-dark: #000;
+    --color-light: #fefefe;
+}
+
 body {
-    background-color: #FEFEFE;
+    background-color: var(--color-bg);
     font-family: Arial, sans-serif;
     line-height: 1.6;
     height: 100vh;
@@ -20,7 +27,7 @@ body {
 }
 
 nav {
-    background-color: #000000;
+    background-color: var(--color-dark);
     width: 90%;
     height: 58px;
     display: flex;
@@ -34,7 +41,7 @@ nav {
 .logo-container {
     width: 200px;
     height: 100px;
-    background-color: #FEFEFE;
+    background-color: var(--color-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,12 +68,10 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 0;
-    margin: 0;
 }
 
 .menu__items li a {
-    color: #FEFEFE;
+    color: var(--color-light);
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -77,24 +82,19 @@ nav {
 }
 
 .presentation {
-    background-color: #9F01FA;
+    background-color: var(--color-primary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    text-align: left;
     margin: 0 auto;
     padding: 50px;
     width: 90%;
     height: 500px;
 }
 
-.text {
-    flex: 1;
-}
-
 .describe {
-    color: #FEFEFE;
+    color: var(--color-light);
 }
 
 .foto {
@@ -112,12 +112,8 @@ nav {
     margin-top: 20px;
 }
 
-.icons img {
-    margin-right: -15px;
-}
-
 .icons a {
-    color: #000000;
+    color: var(--color-dark);
     text-decoration: none;
     font-weight: bold;
 }
@@ -128,14 +124,14 @@ nav {
 
 /*MAIN*/
 main {
-    background-color: #000000;
-    color: #FEFEFE;
+    background-color: var(--color-dark);
+    color: var(--color-light);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     width: 90%;
+    margin: 0 auto;
 }
 
 .title {
@@ -143,7 +139,7 @@ main {
     text-decoration: underline;
     padding: 50px 0 10px;
     font-size: 32px;
-    color: #9F01FA;
+    color: var(--color-primary);
 }
 
 .content {
@@ -155,8 +151,8 @@ main {
 }
 
 .icon-container {
-    background-color: #FEFEFE;
-    border: #9F01FA solid 3px;
+    background-color: var(--color-light);
+    border: solid 3px var(--color-primary);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -191,7 +187,7 @@ main {
 .icon-link {
     margin-top: 10px;
     text-align: center;
-    color: #000000;
+    color: var(--color-dark);
     font-weight: bold;
     text-decoration: none;
 }
@@ -241,8 +237,8 @@ main {
 .formations {
     display: flex;
     justify-content: space-around;
-    background-color: #FEFEFE;
-    border: #9F01FA solid 3px;
+    background-color: var(--color-light);
+    border: solid 3px vaer(--color-primary);
     width: auto;
     height: 450px;
     border-radius: 20px;
@@ -276,14 +272,14 @@ a img:hover {
 }
 
 .exper-content {
-    background-color: #FEFEFE;
-    color: #000000;
+    background-color: var(--color-light);
+    color: var(--color-dark);
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     margin: 20px 0 80px;
-    border: #9F01FA solid 3px;
+    border: solid 3px var(--color-primary);
 }
 
 .projects-section, .practices-section{
@@ -297,12 +293,11 @@ a img:hover {
     gap: 15px;
 }
 
-.project-item{
+.project-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
 .project-item img{
     width: 300px;
@@ -335,7 +330,7 @@ form input, form textarea {
 /*FOOTERr*/
 footer {
     width: 90%;
-    background-color: #9F01FA;
+    background-color: var(--color-primary);
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
@@ -390,7 +385,7 @@ form button {
     padding: 10px 20px;
     margin: 10px;
     font-size: 16px;
-    background-color: #000000;
+    background-color: var(--color-dark);
     color: white;
     border: none;
     border-radius: 5px;
@@ -399,12 +394,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #9F01FA;
-    border: solid 1px #000000;
+    background-color: var(--color-primary);
+    border: solid 1px var(--color-dark);
 }
 
 #contacto {
-    color: #000000;
+    color: var(--color-dark);
     padding: 30px;
     font-size: 32px;
 }
@@ -412,7 +407,7 @@ form button:hover {
 .download-btn {
     padding: 10px 20px;
     align-self: start;
-    background-color: #000000;
+    background-color: var(--color-dark);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -421,15 +416,15 @@ form button:hover {
 }
 
 .download-btn:hover {
-    background-color: #9F01FA;
-    border: solid 1px #000000;
+    background-color: var(--color-primary);
+    border: solid 1px var(--color-dark);
 }
 
 .info {
     width: 90%;
     padding: 10px;
     background-color: black;
-    color: #FEFEFE;
+    color: var(--color-bg);
     margin: 0 auto;
     text-align: center;
     box-sizing: border-box;
