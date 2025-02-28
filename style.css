@@ -18,6 +18,8 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     height: 100vh;
+    display: flex;/**/
+    flex-direction: column;/**/
 }
 
 /* HEADER */
@@ -28,7 +30,7 @@ body {
 
 nav {
     background-color: var(--color-dark);
-    width: 90%;
+    width: 100%;/*90%*/
     height: 58px;
     display: flex;
     justify-content: space-between;
@@ -37,14 +39,15 @@ nav {
     margin: 0 auto;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: /*50%;*/0;
+    right: 0;
+    /*transform: translateX(-50%);*/
 }
 
 /*LOGO*/
 .logo-container {
-    width: 200px;
-    height: 100px;
+    width: /*200px;*/150px;
+    height: /*100px;*/80px;
     background-color: var(--color-bg);
     display: flex;
     align-items: center;
@@ -70,31 +73,33 @@ nav {
 .menu__items {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    /*justify-content: center;*/
+    gap: /*20px;*/15px;
 }
 
 .menu__items li a {
     color: var(--color-light);
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: /*16px;*/14px;
 }
 
 .menu__items li a:hover {
     text-decoration: underline;
 }
 
+/*PRESENTATION*/
 .presentation {
     background-color: var(--color-primary);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: /*row;*/column;
+    /*justify-content: space-between;*/
     align-items: center;
-    margin: 0 auto;
-    padding: 50px;
-    width: 90%;
-    height: 500px;
+    text-align: center;/**/
+    /*margin: 0 auto;*/
+    padding: /*50px;*/40px 20px;
+    width: /*90%;*/100%;
+    /*height: 500px;*/
 }
 
 .describe {
@@ -103,16 +108,16 @@ nav {
 
 .foto {
     border-radius: 50%;
-    width: 270px;
-    height: 295px;
+    width: /*270px;*/200px;
+    height: /*295px;*/220px;
     object-fit: copver;
     margin-left: 20px;
 }
 
 .icons {
     display: flex;
-    gap: 5px;
-    align-self: flex-end;
+    gap: /*5px;*/10px;
+    /*align-self: flex-end;*/
     margin-top: 20px;
 }
 
@@ -132,17 +137,18 @@ main {
     color: var(--color-light);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
-    width: 90%;
-    margin: 0 auto;
+    width: /*90%;*/100%;
+    /*margin: 0 auto;*/
+    padding: 20px;
 }
 
 .title {
     text-align: center;
     text-decoration: underline;
-    padding: 50px 0 10px;
-    font-size: 32px;
+    padding: /*50px 0 10px;*/30px 0 10px;
+    font-size: 24px;
     color: var(--color-primary);
 }
 
@@ -156,14 +162,17 @@ main {
 
 .icon-container {
     background-color: var(--color-light);
-    border: solid 3px var(--color-primary);
+    /*border: solid 3px var(--color-primary);*/
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
+    flex-direction: column;/**/
     align-items: center;
-    width: auto;
+    width: /*auto;*/100%;
+    padding: 20px;
     border-radius: 20px;
-    height: 270px;
-    margin: 20px 0;
+    /*height: 270px;
+    margin: 20px 0;*/
+
 }
 
 .icon-item {
@@ -173,7 +182,7 @@ main {
 }
 
 .icon-container img {
-    width: 135px;
+    width: /*135px;*/100px;
     height: auto;
 }
 
@@ -189,8 +198,8 @@ main {
 }
 
 .icon-link {
-    margin-top: 10px;
-    text-align: center;
+   /* margin-top: 10px;
+    text-align: center;*/
     color: var(--color-dark);
     font-weight: bold;
     text-decoration: none;
@@ -334,11 +343,11 @@ form input, form textarea {
 
 /*FOOTERr*/
 footer {
-    width: 90%;
+    width:/* 90%;*/100%;
     background-color: var(--color-primary);
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding: 20px;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 .footer-content {
@@ -440,142 +449,15 @@ form button:hover {
 }
 
 /*RESPONSIVO*/
-/* 📱 Dispositivos móviles (máximo 768px) */
-@media (max-width: 768px) {
+/*Dispositivos móviles (máximo 768px) */
+@media (min-width: 768px) {
+
     nav {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    .menu__items {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .logo-container {
-        width: 150px;
-        height: 80px;
-        transform: skew(-20deg) scale(0.8);
-    }
-
-    .presentation {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .foto {
-        width: 200px;
-        height: 220px;
-        margin: 10px 0;
-    }
-
-    main {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .icon-container {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-
-    .formations {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    .exper-content {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .projects-section, .practices-section {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .practices-section {
-        margin-top: 30px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    footer img {
         width: 90%;
-        height: auto;
-        margin: 20px 0;
+        margin: 0 auto;
     }
-
-    .contenido {
-        width: 90%;
-        height: auto;
+    .menu__items{
+        gap: 20px;
     }
 }
-
-/* 📊 Tabletas (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    nav {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .menu__items {
-        gap: 15px;
-    }
-
-    .presentation {
-        flex-direction: column;
-        padding: 30px;
-        text-align: center;
-    }
-
-    .foto {
-        width: 230px;
-        height: 250px;
-    }
-
-    main {
-        width: 95%;
-    }
-
-    .icon-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .formations {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .exper-content {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .projects-section, .practices-section {
-        width: 48%;
-    }
-
-    footer img {
-        width: 400px;
-        height: auto;
-    }
-
-    .contenido {
-        width: 80%;
-    }
-}
-
+   

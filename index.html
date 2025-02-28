@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Portafolio Personal</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,7 @@
 <body>
     <!--Header-->
     <header class="container">
-        <nav class="menus">
+        <nav class="menus" role="navigation" aria-label="Menú principal">
             <div class="logo-container">
                 <div class="logo">
                     <img class="img__logo" src="./img/icons/logo_svg.svg" alt="SASEYU">
@@ -32,20 +32,19 @@
 
         <div class="presentation">
             <div class="text">
-                <h1>Hola soy, Samuel Segura un dearrollador frontend apasionado por crear paginas web.</h1>
+                <h1>Hola soy, Samuel Segura un desarrollador frontend apasionado por crear paginas web.</h1>
                 <p class="describe">Soy desarrollador frontend con habilidades sólidas en diseño y construcción de
                     interfaces web. Actualmente, participe del proyecto Oracle ONE en colaboración con Alura Latam,
-                    donde
-                    he perfeccionando mis competencias y ampliando mi experiencia en el desarrollo y diseño de
+                    donde he perfeccionado mis competencias y ampliando mi experiencia en el desarrollo y diseño de
                     soluciones.
                 </p>
             </div>
-            <img class="foto" src="./img/mi_perfil.jpeg" alt="foto_samuel" width="200">
+            <img class="foto" src="/img/mi_perfil.jpeg" alt="foto_samuel" width="200">
             <div class="icons">
                 <img src="/img/icons/githubN.png" alt="icono github" width="25">
-                <a href="https://github.com/SASEYU" target="_blank">Github</a>
+                <a href="https://github.com/SASEYU" target="_blank" aria-label="Visitanos en Github">Github</a>
                 <img src="/img/icons/linkedinN.png" alt="icono linkedin" width="25">
-                <a href="https://www.linkedin.com/in/samuel-segura-saseyu" target="_blank">Linkedln</a>
+                <a href="https://www.linkedin.com/in/samuel-segura-saseyu" target="_blank" aria-label="Visitanos en Linkedin">Linkedln</a>
             </div>
         </div>
     </header>
@@ -70,25 +69,25 @@
                 <p>Cuento con un sólido dominio en tecnologías clave para el desarrollo frontend:</p>
                 <div class="icon-container">
                     <div class="icon-item">
-                        <img id="html" src="./img/icons/file_type_html_icon_130541.svg" alt="icono_html" width="150px">
+                        <img id="html" src="/img/icons/file_type_html_icon_130541.svg" alt="icono_html" width="150px">
                         <a href="#html" class="icon-link html-link">Html</a>
                     </div>
                     <div class="icon-item">
-                        <img id="css" src="./img/icons/2333399-code-css-css3-internet-websi_85585.svg" alt="icono_css"
+                        <img id="css" src="/img/icons/2333399-code-css-css3-internet-websi_85585.svg" alt="icono_css"
                             width="120px">
                         <a href="#css" class="icon-link css-link">Css</a>
                     </div>
                     <div class="icon-item">
-                        <img id="js" src="./img/icons/javascript_icon_130900.svg" alt="icono_JavaScript" width="120px">
+                        <img id="js" src="/img/icons/javascript_icon_130900.svg" alt="icono_JavaScript" width="120px">
                         <a href="#js" class="icon-link js-link">JavaScript</a>
                     </div>
                     <div class="icon-item">
-                        <img id="github" src="./img/icons/social_media_logo_github_icon-icons.com_56662.svg"
+                        <img id="github" src="/img/icons/social_media_logo_github_icon-icons.com_56662.svg"
                             alt="icono_github" width="120px">
                         <a href="#github" class="icon-link github-link">GitHub</a>
                     </div>
                     <div class="icon-item">
-                        <img id="ia" src="./img/icons/ia_writer_dark_macos_bigsur_icon_189510.png" alt="icono_IA"
+                        <img id="ia" src="/img/icons/ia_writer_dark_macos_bigsur_icon_189510.png" alt="icono_IA"
                             width="120px">
                         <a href="#ia" class="icon-link ia-link">IA</a>
                     </div>
@@ -129,20 +128,20 @@
                     influido positivamente en mi crecimiento profesional como desarrollador frontend.</p>
                 <div class="icon-container">
                     <div class="hobbie-item">
-                        <img id="jiujitsu" src="./img/icons/olimpycs_29_icon-icons.com_68611.svg" alt="Jiu-Jitsu"
+                        <img id="jiujitsu" src="/img/icons/olimpycs_29_icon-icons.com_68611.svg" alt="Jiu-Jitsu"
                             width="">
                         <a href="#jiujitsu" class="hobbie-link jiu-link">Jiu-Jitsu</a>
                     </div>
                     <div class="hobbie-item">
-                        <img id="futbol" src="./img/icons/olimpycs_17_icon-icons.com_68623.svg" alt="futbol" width="">
+                        <img id="futbol" src="/img/icons/olimpycs_17_icon-icons.com_68623.svg" alt="futbol" width="">
                         <a href="#futbol" class="hobbie-link fut-link">Futbol</a>
                     </div>
                     <div class="hobbie-item">
-                        <img id="cocina" src="./img/icons/hot_cooking_icon_134855.svg" alt="cocina" width="">
+                        <img id="cocina" src= "/img/icons/hot_cooking_icon_134855.svg" alt="cocina" width="">
                         <a href="#cocina" class="hobbie-link cocin-link">Cocina</a>
                     </div>
                     <div class="hobbie-item">
-                        <img id="libros" src="./img/icons/reading_books_icon_176864.svg" alt="autoaprendizaje" width="">
+                        <img id="libros" src="/img/icons/reading_books_icon_176864.svg" alt="autoaprendizaje" width="">
                         <a href="#libros" class="hobbie-link libr-link">Autodidacta</a>
                     </div>
                 </div>
@@ -184,7 +183,7 @@
                     permitido construir una base sólida en tecnologías clave y buenas prácticas de desarrollo.</p>
                 <div class="formations">
                     <div class="alura">
-                        <a href="#alura"> <img src="./img/icons/aluraok.svg" id="alura" alt="Alura" width="300px"> </a>
+                        <a href="#alura"> <img src="/img/icons/aluraok.svg" id="alura" alt="Alura" width="300px"> </a>
                         <div class="content">
                             <h3>Cursos:</h3>
                             <ul>
@@ -201,7 +200,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <a href="#skill"><img src="./img/icons/skillwp.svg" id="skill" alt="Skill" width="300px"></a>
+                        <a href="#skill"><img src="/img/icons/skillwp.svg" id="skill" alt="Skill" width="300px"></a>
                         <div>
                             <h3>Curso:</h3>
                             <ul>
@@ -244,15 +243,15 @@
                         <h3>Proyectos</h3>
                         <div class="proy-content">
                             <div class="project-item">
-                                <img src="./img/numero_suerte.jpg" alt="numero de la suerte" width="200px">
+                                <img src="/img/numero_suerte.jpg" alt="numero de la suerte" width="200px">
                                 <a href=""></a>
                             </div>
                             <div class="project-item">
-                                <img src="./img/encrypto.jpg" alt="encriptador" width="200px">
+                                <img src="/img/encrypto.jpg" alt="encriptador" width="200px">
                                 <a href=""></a>
                             </div>
                             <div class="project-item"> 
-                                <img src="./img/web_ventas.jpg" alt="web ventas" width="220px">
+                                <img src="/img/web_ventas.jpg" alt="web ventas" width="220px">
                                 <a href=""></a>
                             </div>                
                         </div>
@@ -260,15 +259,15 @@
                     <div class="practices-section">
                         <h3>Practicas</h3>
                         <div class="pract-content">
-                            <img src="./img/portafolio_1.png" alt="portafolio_1" width="200px">
+                            <img src="/img/portafolio_1.png" alt="portafolio_1" width="200px">
                             <a href=""></a>
-                            <img src="./img/portafolio_2.png" alt="portafolio_2" width="200px">
+                            <img src="/img/portafolio_2.png" alt="portafolio_2" width="200px">
                             <a href=""></a>
-                            <img src="./img/portafolio_3.png" alt="portafolio_3" width="200px">
+                            <img src="/img/portafolio_3.png" alt="portafolio_3" width="200px">
                             <a href=""></a>
-                            <img class="prac-html" src="./img/icons/file_type_html_icon_130541.svg" alt="practica_html" width="200px">
+                            <img class="prac-html" src="/img/icons/file_type_html_icon_130541.svg" alt="practica_html" width="200px">
                             <a href=""></a>
-                            <img class="prac-js" src="img/icons/javascript_icon_130900.svg" alt="practica_js" width="200px">
+                            <img class="prac-js" src="/img/icons/javascript_icon_130900.svg" alt="practica_js" width="200px">
                             <a href=""></a>
                         </div>
                     </div>
@@ -283,7 +282,7 @@
         <h2 class="title" id="contacto">Contacto</h2>
         <div class="footer-content">
             <div>
-                <img src="./img/icons/inbox_letter_contact_envelope_mail_email_icon_220346.svg" alt="email"
+                <img src="/img/icons/inbox_letter_contact_envelope_mail_email_icon_220346.svg" alt="email"
                     width="200px">
             </div>
             <div class="contenido">
