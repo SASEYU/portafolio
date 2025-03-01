@@ -440,6 +440,8 @@ form button:hover {
         box-sizing: border-box;
     }
 
+    
+
     html, body {
         overflow-x: hidden; /* Evita el desplazamiento horizontal */
         width: 100vw;
@@ -524,6 +526,11 @@ form button:hover {
 
 
 @media (max-width: 480px) {
+
+    
+    .menus {
+        margin-left: -10px;
+    }
     .container {
         width: 100%;
     }
@@ -531,5 +538,12 @@ form button:hover {
     .logo-container {
         width: 100px;
         height: 40px;
+    }
+    .presentation{
+        padding: 50px;
+    }
+
+    #alura, #skill {
+        width: 80px;
     }
 }
