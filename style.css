@@ -13,6 +13,7 @@
     --color-light: #fefefe;
 }
 
+
 body {
     background-color: var(--color-bg);
     font-family: Arial, sans-serif;
@@ -435,6 +436,19 @@ form button:hover {
 
 /*RESPONSIVO*/
 @media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+    html, body {
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+        width: 100vw;
+    }    
+
+    .container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     .menu-toggle {
         display: block; /* Se muestra en pantallas pequeñas */
     }
